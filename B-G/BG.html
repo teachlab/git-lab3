@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+	<title>Les branches en bref</title>
+</head>
+<body>
+
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url('266743.jpg');
+    max-width: 100%;
+
+    /* Full height */
+    height: 650px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid black;
+}
+
+.titre{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20%;
+  color: black;
+  text-shadow: 1px 1px #FF0000
+
+}
+
+p, .code{
+  padding: 20px;
+}
+</style>
+
+	    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Les branches avec Git</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+
+
+
+<div class="parallax">
+  <h2 class="titre">LES BRANCHES EN BREF</h2>
+</div>
+
+<br>
+<br>
+
+		<p>
+Pour réellement comprendre la manière dont Git gère les branches, nous devons revenir en arrière et examiner de plus près comment Git stocke ses données. Si vous vous souvenez bien du chapitre Démarrage rapide, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés snapshots). <br><br>
+
+Lorsque vous faites un commit, Git stocke un objet commit qui contient un pointeur vers l’instantané (snapshot) du contenu que vous avez indexé. Cet objet contient également les noms et prénoms de l’auteur, le message que vous avez renseigné ainsi que des pointeurs vers le ou les commits qui précèdent directement ce commit : aucun parent pour le commit initial, un parent pour un commit normal et de multiples parents pour un commit qui résulte de la fusion d’une ou plusieurs branches.<br><br>
+
+Pour visualiser ce concept, supposons que vous avez un répertoire contenant trois fichiers que vous indexez puis validez. L’indexation des fichiers calcule une empreinte (checksum) pour chacun (via la fonction de hachage SHA-1 mentionnée au chapitre Démarrage rapide), stocke cette version du fichier dans le dépôt Git (Git les nomme blobs) et ajoute cette empreinte à la zone d’index (staging area) :<br><br>
+
+<div style="background-color: grey;" class="code">
+<i>
+$ git add README test.rb LICENSE<br>
+$ git commit -m 'initial commit of my project'
+</i>
+</div><br><br>
+
+Lorsque vous créez le commit en lançant la commande git commit, Git calcule l’empreinte de chaque sous-répertoire (ici, seulement pour le répertoire racine) et stocke ces objets de type arbre dans le dépôt Git. Git crée alors un objet commit qui contient les méta-données et un pointeur vers l’arbre de la racine du projet de manière à pouvoir recréer l’instantané à tout moment.<br><br>
+
+Votre dépôt Git contient à présent cinq objets : un blob pour le contenu de chacun de vos trois fichiers, un arbre (tree) qui liste le contenu du répertoire et spécifie quels noms de fichiers sont attachés à quels blobs et enfin un objet commit portant le pointeur vers l’arbre de la racine ainsi que toutes les méta-données attachées au commit.
+</p>
+
+<div class="col-md-4 col-md-push-1">
+
+		<img src="commit-and-tree.png" alt="">
+</div>
+
+
+
+
+
+
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+</body>
+</html>
