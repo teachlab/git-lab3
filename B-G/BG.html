@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+	<title>Les branches en bref</title>
+</head>
+<body>
+	<h1 style="text-align: center; background-color: grey;">Les branches avec Git</h1>
+		
+		<p>
+
+Pour réellement comprendre la manière dont Git gère les branches, nous devons revenir en arrière et examiner de plus près comment Git stocke ses données. Si vous vous souvenez bien du chapitre Démarrage rapide, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés snapshots).
+
+Lorsque vous faites un commit, Git stocke un objet commit qui contient un pointeur vers l’instantané (snapshot) du contenu que vous avez indexé. Cet objet contient également les noms et prénoms de l’auteur, le message que vous avez renseigné ainsi que des pointeurs vers le ou les commits qui précèdent directement ce commit : aucun parent pour le commit initial, un parent pour un commit normal et de multiples parents pour un commit qui résulte de la fusion d’une ou plusieurs branches.
+
+Pour visualiser ce concept, supposons que vous avez un répertoire contenant trois fichiers que vous indexez puis validez. L’indexation des fichiers calcule une empreinte (checksum) pour chacun (via la fonction de hachage SHA-1 mentionnée au chapitre Démarrage rapide), stocke cette version du fichier dans le dépôt Git (Git les nomme blobs) et ajoute cette empreinte à la zone d’index (staging area) :
+
+$ git add README test.rb LICENSE
+$ git commit -m 'initial commit of my project'
+
+Lorsque vous créez le commit en lançant la commande git commit, Git calcule l’empreinte de chaque sous-répertoire (ici, seulement pour le répertoire racine) et stocke ces objets de type arbre dans le dépôt Git. Git crée alors un objet commit qui contient les méta-données et un pointeur vers l’arbre de la racine du projet de manière à pouvoir recréer l’instantané à tout moment.
+
+Votre dépôt Git contient à présent cinq objets : un blob pour le contenu de chacun de vos trois fichiers, un arbre (tree) qui liste le contenu du répertoire et spécifie quels noms de fichiers sont attachés à quels blobs et enfin un objet commit portant le pointeur vers l’arbre de la racine ainsi que toutes les méta-données attachées au commit.
+</p>
+
+		<img src="commit-and-tree.png" alt="">
+
+
+
+
+
+
+
+
+
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="../js/vendor/bootstrap.min.js"></script>
+</body>
+</html>
