@@ -9,6 +9,37 @@
 </head>
 <body>
 
+<style>
+  .parallax {
+    /* The image used */
+    background-image: url('266743.jpg');
+    max-width: 100%;
+
+    /* Full height */
+    height: 650px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid black;
+}
+
+.titre{
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20%;
+  color: black;
+  text-shadow: 1px 1px #FF0000
+
+}
+
+p, .code{
+  padding: 20px;
+}
+</style>
+
 	    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -25,8 +56,15 @@
       </div>
     </nav>
 
-<div class="row" style="padding: 65px;">
-    <h2>Les branches en bref</h2>
+
+
+
+<div class="parallax">
+  <h2 class="titre">LES BRANCHES EN BREF</h2>
+</div>
+
+<br>
+<br>
 
 		<p>
 Pour réellement comprendre la manière dont Git gère les branches, nous devons revenir en arrière et examiner de plus près comment Git stocke ses données. Si vous vous souvenez bien du chapitre Démarrage rapide, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés snapshots). <br><br>
@@ -35,7 +73,7 @@ Lorsque vous faites un commit, Git stocke un objet commit qui contient un pointe
 
 Pour visualiser ce concept, supposons que vous avez un répertoire contenant trois fichiers que vous indexez puis validez. L’indexation des fichiers calcule une empreinte (checksum) pour chacun (via la fonction de hachage SHA-1 mentionnée au chapitre Démarrage rapide), stocke cette version du fichier dans le dépôt Git (Git les nomme blobs) et ajoute cette empreinte à la zone d’index (staging area) :<br><br>
 
-<div style="background-color: grey;">
+<div style="background-color: grey;" class="code">
 <i>
 $ git add README test.rb LICENSE<br>
 $ git commit -m 'initial commit of my project'
@@ -51,7 +89,7 @@ Votre dépôt Git contient à présent cinq objets : un blob pour le contenu de 
 
 		<img src="commit-and-tree.png" alt="">
 </div>
-</div>
+
 
 
 
