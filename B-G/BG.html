@@ -12,7 +12,7 @@
 <style>
   .parallax {
     /* The image used */
-    background-image: url('266743.jpg');
+    background-image: url('img/266743.jpg');
     max-width: 100%;
 
     /* Full height */
@@ -32,12 +32,26 @@
   padding-top: 20%;
   color: black;
   text-shadow: 1px 1px #FF0000
-
 }
 
-p, .code{
+ .code{
+  padding: 15px;
+  border-radius: 5px;
+  color: #0B6121;
+ }
+
+ footer{
+  background-color: black;
+  color: white;
   padding: 20px;
-}
+  text-align: center;
+  font-size: 24px;
+ }
+
+ .diagram{
+  padding: 25px;
+ }
+
 </style>
 
 	    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -65,7 +79,7 @@ p, .code{
 
 <br>
 <br>
-
+<div class="container-fluid">
 		<p>
 Pour réellement comprendre la manière dont Git gère les branches, nous devons revenir en arrière et examiner de plus près comment Git stocke ses données. Si vous vous souvenez bien du chapitre Démarrage rapide, Git ne stocke pas ses données comme une série de modifications ou de différences successives mais plutôt comme une série d’instantanés (appelés snapshots). <br><br>
 
@@ -84,21 +98,26 @@ Lorsque vous créez le commit en lançant la commande git commit, Git calcule l�
 
 Votre dépôt Git contient à présent cinq objets : un blob pour le contenu de chacun de vos trois fichiers, un arbre (tree) qui liste le contenu du répertoire et spécifie quels noms de fichiers sont attachés à quels blobs et enfin un objet commit portant le pointeur vers l’arbre de la racine ainsi que toutes les méta-données attachées au commit.
 </p>
-
-<div class="col-md-4 col-md-push-1">
-
-		<img src="commit-and-tree.png" alt="">
 </div>
 
+<div class="row">
+  <div class="col-md-4 col-md-push-1">
+  		<img src="img/commit-and-tree.png" alt="" class="diagram">
+  </div>
+</div>
 
-
-
-
-
-
+<div class="row">
+  <div class="col-md-12">
+    <footer>
+      Lama World Order
+    </footer>
+  </div>
+</div>
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="../js/vendor/bootstrap.min.js"></script>
+
+
 </body>
 </html>
