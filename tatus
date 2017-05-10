@@ -1,0 +1,94 @@
+*   [33mcommit a430a66b4a2c89ba09e96eef5b16b45de2bd5d2b[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+[31m|[m[32m\[m  Merge: f9c9523 ed5fef7
+[31m|[m [32m|[m Author: Agnes Busa <agbusadev@gmail.com>
+[31m|[m [32m|[m Date:   Wed May 10 09:11:34 2017 +0200
+[31m|[m [32m|[m 
+[31m|[m [32m|[m     Merge branch 'master' of https://github.com/teachlab/git-lab3
+[31m|[m [32m|[m   
+* [32m|[m   [33mcommit f9c9523f2d13d21210be52024b11cc0ed8892ca4[m
+[33m|[m[34m\[m [32m\[m  Merge: 236101f bbf1f72
+[33m|[m [34m|[m [32m|[m Author: Agnes Busa <agbusadev@gmail.com>
+[33m|[m [34m|[m [32m|[m Date:   Tue May 9 17:00:26 2017 +0200
+[33m|[m [34m|[m [32m|[m 
+[33m|[m [34m|[m [32m|[m     Merge branch 'alexperso342'
+[33m|[m [34m|[m [32m|[m 
+[33m|[m * [32m|[m [33mcommit bbf1f72d239877aec2a0d2a21a777c8bfeaf9890[m[33m ([m[1;31morigin/alexperso342[m[33m)[m
+[33m|[m [34m|[m [32m|[m Author: Agnes Busa <agbusadev@gmail.com>
+[33m|[m [34m|[m [32m|[m Date:   Tue May 9 16:59:22 2017 +0200
+[33m|[m [34m|[m [32m|[m 
+[33m|[m [34m|[m [32m|[m     commit conflit-merge saluuuuuut
+[33m|[m [34m|[m [32m|[m   
+* [34m|[m [32m|[m   [33mcommit 236101f5257fb988f40a5b161362d48dae8087ca[m
+[35m|[m[34m\[m [34m\[m [32m\[m  Merge: 465833e 385e210
+[35m|[m [34m|[m[34m/[m [32m/[m  Author: Agnes Busa <agbusadev@gmail.com>
+[35m|[m [34m|[m [32m|[m   Date:   Tue May 9 16:55:00 2017 +0200
+[35m|[m [34m|[m [32m|[m   
+[35m|[m [34m|[m [32m|[m       Merge branch 'alexperso342'
+[35m|[m [34m|[m [32m|[m       before merging
+[35m|[m [34m|[m [32m|[m   
+[35m|[m * [32m|[m   [33mcommit 385e21003a5925974f88d872f7b66a2bab27607c[m
+[35m|[m [1;31m|[m[1;32m\[m [32m\[m  Merge: 972308c 0c43868
+[35m|[m [1;31m|[m [1;32m|[m [32m|[m Author: Agnes Busa <agbusadev@gmail.com>
+[35m|[m [1;31m|[m [1;32m|[m [32m|[m Date:   Tue May 9 16:53:08 2017 +0200
+[35m|[m [1;31m|[m [1;32m|[m [32m|[m 
+[35m|[m [1;31m|[m [1;32m|[m [32m|[m     Merge branch 'alexperso342' of https://github.com/teachlab/git-lab3 into alexperso342
+[35m|[m [1;31m|[m [1;32m|[m [32m|[m 
+[35m|[m * [1;32m|[m [32m|[m [33mcommit 972308cef1eadedcd5edea6812a0b2e5d4f6ac6b[m
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m Author: Agnes Busa <agbusadev@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m Date:   Tue May 9 16:51:31 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m     Ajout directory pour conflit
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m * [33mcommit b867d53f2b6aa2abd0c89014b745cc7ed697bbba[m[33m ([m[1;31morigin/merge-conflit[m[33m)[m
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m [1;33m|[m Author: Agnes Busa <agnes.busa@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m [1;33m|[m Date:   Wed May 10 01:18:05 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m [1;33m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m [1;33m|[m     Modification de index.html pour générer un conflit
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m [1;33m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m * [33mcommit 9700b538462c646e1ee65c554d9ea864d80272d2[m
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m[32m/[m  Author: Agnes Busa <agnes.busa@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m   Date:   Wed May 10 00:13:19 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m       Modification fichier 404.html de la branche merge-conflit
+[35m|[m [1;32m|[m [1;32m|[m [32m|[m   
+[35m|[m [1;32m|[m [1;32m|[m *   [33mcommit ed5fef735f4a5ccc8dc8e9816089462909c0b074[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m[1;35m\[m  Merge: 47286f2 2c65660
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;35m|[m Author: alexperso342 <alexperso342@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;35m|[m Date:   Tue May 9 17:07:36 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;35m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;35m|[m     Merge branch 'master' of https://github.com/teachlab/git-lab3
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;35m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m *   [33mcommit 2c656600a309f624fe6ea04a75f35d340f45c7de[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m[31m\[m  Merge: 06d2355 fa3253f
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [31m|[m Author: Patrick <patrick.sim@outlook.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [31m|[m Date:   Tue May 9 16:39:04 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [31m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [31m|[m     Merge https://github.com/teachlab/git-lab3
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [31m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m *   [33mcommit fa3253f473d7a37da75cfd1c57712afdd0e2c334[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m[33m\[m  Merge: 4cd5264 3cd8795
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [33m|[m Author: Brice Goëtz <brice.goetz@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [33m|[m Date:   Tue May 9 16:22:40 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [33m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [33m|[m     Merge branch 'master' of https://github.com/teachlab/git-lab3
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [33m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m *   [33mcommit 3cd87958f3db65b5ce7bf29eddf18933ba631338[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m[35m\[m  Merge: 6df6b67 c48f382
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m Author: dobylov <ricodoby@hotmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m Date:   Tue May 9 16:12:40 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m     Merge branch 'dobylov'
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m * [33mcommit c48f382de6d68167937db912fc408234a34c08be[m[33m ([m[1;31morigin/dobylov[m[33m)[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m Author: dobylov <ricodoby@hotmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m Date:   Tue May 9 16:06:31 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m     oui oui c est bon
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [34m|[m [35m|[m   
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m * [35m|[m   [33mcommit 6df6b679390b7fd105635bb927a60e0cd76b5017[m
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m[1;31m\[m [35m\[m  Merge: 4221d7b 758e25b
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m [1;31m|[m [35m|[m Author: sKaraTom <7clauss@gmail.com>
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m [1;31m|[m [35m|[m Date:   Tue May 9 16:04:23 2017 +0200
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m [1;31m|[m [35m|[m 
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m [1;31m|[m [35m|[m     Merge de la branche 'branchesKaraTom' avec ajout page 2
+[35m|[m [1;32m|[m [1;32m|[m [1;34m|[m [1;36m|[m [32m|[m [36m|[m [1;31m|[m [3
